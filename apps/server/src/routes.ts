@@ -1,9 +1,9 @@
 /**
- * hvpn - Xray-core VPN management panel
+ * northwear - Xray-core VPN management panel
  * Copyright (c) 2025 Hohoseini. All rights reserved.
- * Official repository: https://github.com/Hohoseini/HVPN
+ * Official repository: https://github.com/Hohoseini/NORTHWEAR
  *
- * Licensed under the hvpn Proprietary License (see LICENSE).
+ * Licensed under the northwear Proprietary License (see LICENSE).
  * Unauthorized selling, white-labeling, or removal of attribution,
  * branding, or the embedded authorship identifiers is prohibited.
  * Watermark: sr-Hohoseini-2025-9f4c1a7e
@@ -94,7 +94,7 @@ function setAuthCookie(res: import("express").Response, token: string): void {
 }
 
 api.get("/status", (_req, res) => {
-  res.json({ setup: isSetupDone(), name: "HVPN" });
+  res.json({ setup: isSetupDone(), name: "NORTHWEAR" });
 });
 
 api.post("/setup", (req, res) => {
@@ -321,7 +321,7 @@ api.delete("/activity", requirePermission("activity"), (req: AuthedRequest, res)
 api.get("/settings", requirePermission("settings"), (_req, res) => {
   res.json({
     xrayVersion: getSetting("xray_version") || "",
-    subTitle: getSetting("sub_title") || "HVPN",
+    subTitle: getSetting("sub_title") || "NORTHWEAR",
   });
 });
 
@@ -437,7 +437,7 @@ api.delete("/admins/:id", requireOwner, (req: AuthedRequest, res) => {
 api.get("/backup/export", requirePermission("dashboard"), (req: AuthedRequest, res) => {
   logActivity(req.admin!.username, "backup_export", "");
   res.setHeader("Content-Type", "application/json");
-  res.setHeader("Content-Disposition", `attachment; filename="hvpn-backup-${Date.now()}.json"`);
+  res.setHeader("Content-Disposition", `attachment; filename="northwear-backup-${Date.now()}.json"`);
   res.send(JSON.stringify(exportData(), null, 2));
 });
 

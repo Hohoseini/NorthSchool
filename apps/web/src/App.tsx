@@ -1,9 +1,9 @@
 /**
- * HVPN - Xray-core VPN management panel
+ * NORTHWEAR - Xray-core VPN management panel
  * Copyright (c) 2025 Hohoseini. All rights reserved.
- * Official repository: https://github.com/Hohoseini/HVPN
+ * Official repository: https://github.com/Hohoseini/NORTHWEAR
  *
- * Licensed under the HVPN Proprietary License (see LICENSE).
+ * Licensed under the NORTHWEAR Proprietary License (see LICENSE).
  * Unauthorized selling, white-labeling, or removal of attribution,
  * branding, or the embedded authorship identifiers is prohibited.
  * Watermark: sr-Hohoseini-2025-9f4c1a7e
@@ -57,7 +57,7 @@ function FullscreenLoader() {
         <RailLogo className="h-9 w-9" />
       </div>
       <div className="text-center">
-        <div className="font-heading text-2xl tracking-tight">HVPN</div>
+        <div className="font-heading text-2xl tracking-tight">NORTHWEAR</div>
         <div className="mt-1 flex items-center justify-center gap-2 text-sm text-text/60">
           <Spinner className="h-4 w-4" />
           Loading…

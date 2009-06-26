@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src=".github/banner.jpg" width="100%" alt="HVPN" />
+<img src=".github/banner.jpg" width="100%" alt="NORTHWEAR" />
 
 <br/>
 <br/>
@@ -49,7 +49,7 @@
 
 **One job, done right**
 
-No feature bloat. HVPN masters **HTTP-based transports behind a TLS edge** — every link is clean, standard, and always `security=tls` on port `443`.
+No feature bloat. NORTHWEAR masters **HTTP-based transports behind a TLS edge** — every link is clean, standard, and always `security=tls` on port `443`.
 
 </td>
 <td width="50%" valign="top">
@@ -93,7 +93,7 @@ The Owner adds Admins with scoped page access and personal data quotas — and e
 </tr>
 <tr>
 <td valign="top"><b>Inbounds</b></td>
-<td>Five HTTP inbounds auto-seeded on first boot. Enable or disable only, each with a unique port and <code>/HVPN/...</code> path.</td>
+<td>Five HTTP inbounds auto-seeded on first boot. Enable or disable only, each with a unique port and <code>/NORTHWEAR/...</code> path.</td>
 </tr>
 <tr>
 <td valign="top"><b>Activity Log</b></td>
@@ -128,7 +128,7 @@ The Owner adds Admins with scoped page access and personal data quotas — and e
 **4. Expose port `8080`** — open **Settings → Networking → Generate Domain**, and set the port to **`8080`**.
 
 > [!IMPORTANT]
-> HVPN listens on port **`8080`** — this is the **only** port you expose. The ports `10085` and `20000–20004` are Xray's internal ports bound to `127.0.0.1`; they are private and must **not** be exposed.
+> NORTHWEAR listens on port **`8080`** — this is the **only** port you expose. The ports `10085` and `20000–20004` are Xray's internal ports bound to `127.0.0.1`; they are private and must **not** be exposed.
 
 **5. Add a volume (optional)** — attach a **Volume** at **`/data`** so users, admins and settings survive redeploys.
 
@@ -145,7 +145,7 @@ The Owner adds Admins with scoped page access and personal data quotas — and e
 | `PORT` | `8080` | HTTP port. **Expose this one on Railway.** |
 | `JWT_SECRET` | *auto* | Signs admin session cookies. Auto-generated and persisted if unset. |
 | `XRAY_VERSION` | `v26.9.9` | Xray-core release fetched on first boot. |
-| `HVPN_DATA_DIR` | `/data` | Persistent data directory (mount a volume here). |
+| `NORTHWEAR_DATA_DIR` | `/data` | Persistent data directory (mount a volume here). |
 | `PUBLIC_DOMAIN` | *auto* | Override for a custom domain. Falls back to `RAILWAY_PUBLIC_DOMAIN`. |
 | `XRAY_API_PORT` | `10085` | Internal Xray stats API port. |
 | `XRAY_INBOUND_BASE_PORT` | `20000` | Base port for internal inbound listeners. |
@@ -194,11 +194,11 @@ npm start       # serve API + built frontend on :8080
 
 <img src=".github/sections/stars.svg" width="380" alt="Star history" />
 
-<a href="https://www.star-history.com/#Hohoseini/HVPN&Date">
+<a href="https://www.star-history.com/#Hohoseini/NORTHWEAR&Date">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=Hohoseini/HVPN&type=Date&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=Hohoseini/HVPN&type=Date" />
-    <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=Hohoseini/HVPN&type=Date" width="80%" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=Hohoseini/NORTHWEAR&type=Date&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=Hohoseini/NORTHWEAR&type=Date" />
+    <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=Hohoseini/NORTHWEAR&type=Date" width="80%" />
   </picture>
 </a>
 
@@ -209,13 +209,13 @@ npm start       # serve API + built frontend on :8080
 
 <img src=".github/sections/license.svg" width="380" alt="License & Copyright" />
 
-**HVPN is proprietary software. © 2025 Hohoseini — all rights reserved.**
+**NORTHWEAR is proprietary software. © 2025 Hohoseini — all rights reserved.**
 
 It is published for transparency and personal self-hosting only. You are welcome to fork and run your own instance, but the following are **strictly prohibited** without prior written permission:
 
-- Selling, reselling, or offering HVPN (or any derivative) as a paid product or service.
+- Selling, reselling, or offering NORTHWEAR (or any derivative) as a paid product or service.
 - White-labeling or re-branding it under another name.
-- Removing or altering the **Hohoseini / HVPN** attribution, branding, logos, repository links, or the embedded authorship watermarks.
+- Removing or altering the **Hohoseini / NORTHWEAR** attribution, branding, logos, repository links, or the embedded authorship watermarks.
 - Claiming authorship of the project.
 
 The source code carries embedded authorship identifiers and watermarks used to prove origin.

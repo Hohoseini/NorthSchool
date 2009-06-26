@@ -1,12 +1,12 @@
 /**
- * HVPN - Xray-core VPN management panel
+ * NORTHWEAR - Xray-core VPN management panel
  * Copyright (c) 2025 Hohoseini. All rights reserved.
- * Official repository: https://github.com/Hohoseini/HVPN
+ * Official repository: https://github.com/Hohoseini/NORTHWEAR
  *
- * Licensed under the hvpn Proprietary License (see LICENSE).
+ * Licensed under the northwear Proprietary License (see LICENSE).
  * Unauthorized selling, white-labeling, or removal of attribution,
  * branding, or the embedded authorship identifiers is prohibited.
- * Watermark: sr-hvpn-2025-9f4c1a7e
+ * Watermark: sr-northwear-2025-9f4c1a7e
  */
 import "dotenv/config";
 import http from "node:http";
@@ -27,9 +27,9 @@ import { applyTrafficReset } from "./users.js";
 import { rateLimit } from "./ratelimit.js";
 import { sendDailyBackup } from "./bot.js";
 import { refreshIpInfo } from "./ipinfo.js";
-import { HVPN_SIGNATURE, watermark } from "./brand.js";
+import { NORTHWEAR_SIGNATURE, watermark } from "./brand.js";
 
-console.log(HVPN_SIGNATURE);
+console.log(NORTHWEAR_SIGNATURE);
 
 migrate();
 seedInbounds();
@@ -39,9 +39,9 @@ seedDefaultRouting();
 const app = express();
 app.disable("x-powered-by");
 app.use((_req, res, next) => {
-  res.setHeader("X-Powered-By", "hvpn by Hohoseini");
-  res.setHeader("X-hvpn-Author", "Hohoseini");
-  res.setHeader("X-hvpn-Repo", "https://github.com/Hohoseini/HVPN");
+  res.setHeader("X-Powered-By", "northwear by Hohoseini");
+  res.setHeader("X-northwear-Author", "Hohoseini");
+  res.setHeader("X-northwear-Repo", "https://github.com/Hohoseini/NORTHWEAR");
   next();
 });
 app.use(express.json({ limit: "25mb" }));
@@ -80,7 +80,7 @@ const server = http.createServer((req, res) => {
 attachTunnel(server);
 
 server.listen(config.port, config.host, async () => {
-  console.log(`HVPN listening on http://${config.host}:${config.port}`);
+  console.log(`NORTHWEAR listening on http://${config.host}:${config.port}`);
   await startXray();
   void refreshIpInfo();
 });

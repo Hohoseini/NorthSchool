@@ -211,7 +211,7 @@ const en = {
   panelInitialized: "Panel initialized",
   passwordsMismatch: "Passwords do not match",
   welcomeBack: "Welcome back",
-  signInPanel: "Sign in to your HVPN panel",
+  signInPanel: "Sign in to your NORTHWEAR panel",
   signIn: "Sign in",
   signingIn: "Signing in...",
   enterCredentials: "Enter your username and password",
@@ -274,7 +274,7 @@ const en = {
   detailPanelInit: "panel initialized",
 
   // welcome dialog
-  welcomeTitle: "Welcome to HVPN",
+  welcomeTitle: "Welcome to NORTHWEAR",
   welcomeCrafted: "This panel is crafted with care by",
   welcomeFree: "with Friend",
   welcomeAndShared: "and shared",
@@ -491,7 +491,7 @@ const ru: Dict = {
   panelInitialized: "Панель инициализирована",
   passwordsMismatch: "Пароли не совпадают",
   welcomeBack: "С возвращением",
-  signInPanel: "Войдите в свою панель HVPN",
+  signInPanel: "Войдите в свою панель NORTHWEAR",
   signIn: "Войти",
   signingIn: "Вход...",
   enterCredentials: "Введите имя пользователя и пароль",
@@ -553,7 +553,7 @@ const ru: Dict = {
   detailPanelInit: "панель инициализирована",
 
   // welcome dialog
-  welcomeTitle: "Добро пожаловать в HVPN",
+  welcomeTitle: "Добро пожаловать в NORTHWEAR",
   welcomeCrafted: "Эта панель создана с заботой автором",
   welcomeFree: "для друзей",
   welcomeAndShared: "и распространяется",
@@ -765,7 +765,7 @@ const zh: Dict = {
   panelInitialized: "面板已初始化",
   passwordsMismatch: "两次密码不一致",
   welcomeBack: "欢迎回来",
-  signInPanel: "登录你的 HVPN 面板",
+  signInPanel: "登录你的 NORTHWEAR 面板",
   signIn: "登录",
   signingIn: "登录中...",
   enterCredentials: "请输入用户名和密码",
@@ -826,7 +826,7 @@ const zh: Dict = {
   detailPanelInit: "面板已初始化",
 
   // welcome dialog
-  welcomeTitle: "欢迎使用 HVPN",
+  welcomeTitle: "欢迎使用 NORTHWEAR",
   welcomeCrafted: "此面板由以下作者精心打造",
   welcomeFree: "与朋友",
   welcomeAndShared: "并分享",

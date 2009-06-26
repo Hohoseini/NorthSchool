@@ -1,11 +1,11 @@
-HVPN Proprietary License
+NORTHWEAR Proprietary License
 Copyright (c) 2026 Hohoseini. All rights reserved.
 
 ================================================================================
                           ALL RIGHTS RESERVED
 ================================================================================
 
-HVPN (the "Software"), including its source code, user interface, visual
+NORTHWEAR (the "Software"), including its source code, user interface, visual
 design, assets, documentation, and all associated materials, is the exclusive
 intellectual property of Hohoseini (the "Author"). The Software is published
 publicly for transparency and personal self-hosting ONLY. Publication does not
@@ -30,12 +30,12 @@ place the Software in the public domain and does not grant any ownership rights.
   c) Remove, hide, obfuscate, alter, or replace any copyright notice,
      attribution, author name ("Hohoseini"), branding, logo, watermark, embedded
      identifier, or link to the official repository
-     (https://github.com/Hohoseini/HVPN) that appears in the source code,
+     (https://github.com/Hohoseini/NORTHWEAR) that appears in the source code,
      the panel, the subscription pages, or generated configuration remarks.
   d) Claim authorship of the Software or represent it, or any derivative, as
      your own original work.
   e) Redistribute modified or unmodified copies while presenting them as the
-     official HVPN or in a way that causes confusion about the origin.
+     official NORTHWEAR or in a way that causes confusion about the origin.
   f) Republish the Software under a different name to disguise its origin
      ("re-branding" / "white-labeling") without written permission.
 
@@ -43,9 +43,9 @@ place the Software in the public domain and does not grant any ownership rights.
 3. ATTRIBUTION (MANDATORY)
 --------------------------------------------------------------------------------
   Every deployment and every derivative work MUST keep, visible and unmodified:
-    - the "Hohoseini / HVPN" name and logo shown in the panel and on the
+    - the "Hohoseini / NORTHWEAR" name and logo shown in the panel and on the
       subscription pages;
-    - the link to the official repository (https://github.com/Hohoseini/HVPN);
+    - the link to the official repository (https://github.com/Hohoseini/NORTHWEAR);
     - all copyright headers present in the source files;
     - the embedded build/authorship identifier(s) present in the code.
 
