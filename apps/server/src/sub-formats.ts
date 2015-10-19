@@ -100,11 +100,11 @@ export function buildClashConfig(
     yaml.push(`  - { ${parts.join(", ")} }`);
   }
   yaml.push("proxy-groups:");
-  yaml.push(`  - name: NORTHWEAR`);
+  yaml.push(`  - name: HighSchool`);
   yaml.push(`    type: select`);
   yaml.push(`    proxies: [${names.join(", ")}]`);
   yaml.push("rules:");
-  yaml.push("  - MATCH,NORTHWEAR");
+  yaml.push("  - MATCH,HighSchool");
   return yaml.join("\n");
 }
 
@@ -174,7 +174,7 @@ export function buildSingboxConfig(
     outbounds: [
       {
         type: "selector",
-        tag: "NORTHWEAR",
+        tag: "HighSchool",
         outbounds: [...tags, "direct"],
         default: tags[0],
       },

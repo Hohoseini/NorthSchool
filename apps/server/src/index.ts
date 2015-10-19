@@ -1,12 +1,12 @@
 /**
- * NORTHWEAR - Xray-core VPN management panel
+ * HighSchool - Xray-core VPN management panel
  * Copyright (c) 2025 Hohoseini. All rights reserved.
- * Official repository: https://github.com/Hohoseini/NORTHWEAR
+ * Official repository: https://github.com/Hohoseini/HighSchool
  *
- * Licensed under the northwear Proprietary License (see LICENSE).
+ * Licensed under the highschool Proprietary License (see LICENSE).
  * Unauthorized selling, white-labeling, or removal of attribution,
  * branding, or the embedded authorship identifiers is prohibited.
- * Watermark: sr-northwear-2025-9f4c1a7e
+ * Watermark: sr-highschool-2025-9f4c1a7e
  */
 import "dotenv/config";
 import http from "node:http";
@@ -27,9 +27,9 @@ import { applyTrafficReset } from "./users.js";
 import { rateLimit } from "./ratelimit.js";
 import { sendDailyBackup } from "./bot.js";
 import { refreshIpInfo } from "./ipinfo.js";
-import { NORTHWEAR_SIGNATURE, watermark } from "./brand.js";
+import { HighSchool_SIGNATURE, watermark } from "./brand.js";
 
-console.log(NORTHWEAR_SIGNATURE);
+console.log(HighSchool_SIGNATURE);
 
 migrate();
 seedInbounds();
@@ -39,9 +39,9 @@ seedDefaultRouting();
 const app = express();
 app.disable("x-powered-by");
 app.use((_req, res, next) => {
-  res.setHeader("X-Powered-By", "northwear by Hohoseini");
-  res.setHeader("X-northwear-Author", "Hohoseini");
-  res.setHeader("X-northwear-Repo", "https://github.com/Hohoseini/NORTHWEAR");
+  res.setHeader("X-Powered-By", "highschool by Hohoseini");
+  res.setHeader("X-highschool-Author", "Hohoseini");
+  res.setHeader("X-highschool-Repo", "https://github.com/Hohoseini/HighSchool");
   next();
 });
 app.use(express.json({ limit: "25mb" }));
@@ -80,7 +80,7 @@ const server = http.createServer((req, res) => {
 attachTunnel(server);
 
 server.listen(config.port, config.host, async () => {
-  console.log(`NORTHWEAR listening on http://${config.host}:${config.port}`);
+  console.log(`HighSchool listening on http://${config.host}:${config.port}`);
   await startXray();
   void refreshIpInfo();
 });

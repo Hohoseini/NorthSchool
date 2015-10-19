@@ -51,7 +51,7 @@ function sendDocument(
   caption: string,
 ): Promise<TgResult> {
   return new Promise((resolve) => {
-    const boundary = `----NORTHWEAR${Date.now()}`;
+    const boundary = `----HighSchool${Date.now()}`;
     const parts: Buffer[] = [];
     const push = (s: string) => parts.push(Buffer.from(s, "utf8"));
 
@@ -152,8 +152,8 @@ export async function testBot(
 ): Promise<{ ok: boolean; error?: string }> {
   if (!token || chatIds.length === 0) return { ok: false, error: "token and chat id required" };
   const message =
-    "<b>✅ NORTHWEAR bot connected</b>\n\n" +
-    '🔗 <a href="https://github.com/Hohoseini/NORTHWEAR">github.com/Hohoseini/NORTHWEAR</a>\n\n' +
+    "<b>✅ HighSchool bot connected</b>\n\n" +
+    '🔗 <a href="https://github.com/Hohoseini/HighSchool">github.com/Hohoseini/HighSchool</a>\n\n' +
     "⭐️ If you enjoy the project, please give it a star — it means a lot!";
   let anyOk = false;
   let lastError = "";
@@ -175,10 +175,10 @@ export async function sendDailyBackup(): Promise<void> {
   const data = JSON.stringify(exportData(), null, 2);
   const date = new Date().toISOString().slice(0, 10);
   const caption =
-    "<b>🗄 NORTHWEAR daily backup</b>\n" +
+    "<b>🗄 HighSchool daily backup</b>\n" +
     `<b>Date:</b> ${date}\n` +
     "Keep this file safe — you can restore it from the dashboard.";
   for (const chatId of cfg.chatIds) {
-    await sendDocument(cfg.token, chatId, `northwear-backup-${date}.json`, data, caption);
+    await sendDocument(cfg.token, chatId, `highschool-backup-${date}.json`, data, caption);
   }
 }

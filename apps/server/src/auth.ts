@@ -1,9 +1,9 @@
 /**
- * NORTHWEAR - Xray-core VPN management panel
+ * HighSchool - Xray-core VPN management panel
  * Copyright (c) 2025 Hohoseini. All rights reserved.
- * Official repository: https://github.com/Hohoseini/NORTHWEAR
+ * Official repository: https://github.com/Hohoseini/HighSchool
  *
- * Licensed under the NORTHWEAR Proprietary License (see LICENSE).
+ * Licensed under the HighSchool Proprietary License (see LICENSE).
  * Unauthorized selling, white-labeling, or removal of attribution,
  * branding, or the embedded authorship identifiers is prohibited.
  * Watermark: sr-Hohoseini-2025-9f4c1a7e

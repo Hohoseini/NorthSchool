@@ -1,8 +1,8 @@
 {
-  "name": "northwear",
+  "name": "highschool",
   "version": "1.0.0",
   "private": true,
-  "description": "NORTHWEAR - Xray-core VPN management panel with one-click Railway deploy",
+  "description": "HighSchool - Xray-core VPN management panel with one-click Railway deploy",
   "license": "MIT",
   "engines": {
     "node": ">=22.5.0"

@@ -1,9 +1,9 @@
 /**
- * northwear - Xray-core VPN management panel
+ * highschool - Xray-core VPN management panel
  * Copyright (c) 2025 Hohoseini. All rights reserved.
- * Official repository: https://github.com/Hohoseini/NORTHWEAR
+ * Official repository: https://github.com/Hohoseini/HighSchool
  *
- * Licensed under the northwear Proprietary License (see LICENSE).
+ * Licensed under the highschool Proprietary License (see LICENSE).
  * Unauthorized selling, white-labeling, or removal of attribution,
  * branding, or the embedded authorship identifiers is prohibited.
  * Watermark: sr-Hohoseini-2025-9f4c1a7e
@@ -45,7 +45,7 @@ function assetName(): string {
 function download(url: string, dest: string): Promise<void> {
   return new Promise((resolve, reject) => {
     const file = createWriteStream(dest);
-    const req = https.get(url, { headers: { "User-Agent": "NORTHWEAR" } }, (res) => {
+    const req = https.get(url, { headers: { "User-Agent": "HighSchool" } }, (res) => {
       if (res.statusCode && res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
         file.close();
         download(res.headers.location, dest).then(resolve).catch(reject);
