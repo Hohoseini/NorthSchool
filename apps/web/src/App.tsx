@@ -1,5 +1,5 @@
 /**
- * HighSchool - Xray-core VPN management panel
+ * HighSchool - Xray-core EXAM management panel
  * Copyright (c) 2025 Hohoseini. All rights reserved.
  * Official repository: https://github.com/Hohoseini/HighSchool
  *

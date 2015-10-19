@@ -1,7 +1,7 @@
 {
   "name": "HighSchool",
-  "description": "Xray-core VPN management panel — VLESS/VMess/Trojan over WS, XHTTP and HTTPUpgrade. TLS terminated at the Railway edge on port 443.",
-  "tags": ["vpn", "xray", "proxy", "nodejs", "react"],
+  "description": "Xray-core EXAM management panel — VLESS/VMess/Trojan over WS, XHTTP and HTTPUpgrade. TLS terminated at the Railway edge on port 443.",
+  "tags": ["exam", "xray", "proxy", "nodejs", "react"],
   "services": [
     {
       "name": "highschool",
