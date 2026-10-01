@@ -27,7 +27,7 @@ export const config = {
   xrayDir,
   dbPath: path.join(dataDir, "northwear.db"),
   xrayAccessLog: path.join(xrayDir, "access.log"),
-  port: Number(process.env.PORT || 8080),
+  port: Number(process.env.PORT || 8880),
   host: "0.0.0.0",
   jwtSecret: resolveSecret(),
   xrayVersion: process.env.XRAY_VERSION || "v26.9.9",
